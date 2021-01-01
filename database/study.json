@@ -1,0 +1,19 @@
+[
+  {
+    "_id": 1,
+    "_name": "Type 1 Diabetes BDCP Clinical Study ",
+    "_studyTypes": [
+      1,
+      2
+    ],
+    "_description": "The BDCP clinical study is for type 1 diabetes patients, 18 years or older, to evaluate the safety of LY3209590 in patients being treated with multiple daily injection therapy.",
+    "_summary": "Evaluate the Safety of Ly3209590 in Patients with type 1 diabetes being treated with multiple daily injection therapy.",
+    "_length": 31,
+    "_age": 21,
+    "_compensation": "Participants will receive at no cost: study product, study materials and study-specific procedures",
+    "_status": "Enrolling",
+    "_image": "",
+    "_inclusions": "Must be diabetic",
+    "_exclusions": "Can't be dead"
+  }
+]

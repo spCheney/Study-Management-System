@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>RMDC Studies</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <script src="../javascript/views/header_view.js"></script>
+    <script src="../javascript/views/study_type_view.js"></script>
+    <script src="../javascript/views/study_view.js"></script>
+    <script src="../javascript/views/admin_view.js"></script>
+    <script src="../javascript/views/database_view.js"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+  </head>
+  <body>
+     <div class="header">
+         <a href="javascript:header.loadPage('index.html')" class="solid headerText">Home</a>
+         <div style="float: right;" id="dropdown_container">
+             Rocky Mountain Diabetes Center
+         </div>
+     </div>
+     <div id="content" style="padding: 20px;">
+        <h1>Current Studies</h1>
+        <div id="study_type_list"></div>
+
+        <br>
+        <div class="row">
+          <div class="col-md-5"></div>
+          <div class="col-md-2" style="padding: 0px;">
+             <button type="button" class="btn btn-primary" style="width: 100%;">View All Studies</button>
+          </div>
+        </div>
+     </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<h1>Edit Study Types</h1>
+<button type="button" class="btn btn-primary" id="add_btn">Add Study Type</button>
+
+<br><br>
+<table class="table table-striped table-hover">
+   <thead>
+      <th>Name</th>
+      <th>Active</th>
+   </thead>
+   <tbody id="study_types"></tbody>
+</table>
+
+<script type="text/javascript">
+   {
+      let view = new StudyTypeView();
+      view.createStudyTypesTable();
+   }
+</script>

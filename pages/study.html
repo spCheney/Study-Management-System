@@ -1,0 +1,67 @@
+<img class="studyImage" id="image">
+<div id="header_container">
+   <h1 id="header">Current Study</h1>
+   <span id="summary"></span>
+</div>
+
+<br>
+<div id="edit_btn"></div>
+<div class="row">
+   <div class="col-md-12">
+      <div class="row">
+         <b>Type of Study:</b>
+      </div>
+      <div class="row">
+         <span id="type"></span>
+      </div>
+      <div class="row">
+         <b>Study Length:</b>
+      </div>
+      <div class="row">
+         <span id="length"></span>
+      </div>
+      <div class="row">
+         <b>Target Age:</b>
+      </div>
+      <div class="row">
+         <span id="age"></span>
+      </div>
+      <div class="row">
+         <b>Subject Compensation:</b>
+      </div>
+      <div class="row">
+         <span id="compensation"></span>
+      </div>
+      <div class="row">
+         <b>Status:</b>
+      </div>
+      <div class="row">
+         <span id="status"></span>
+      </div>
+      <div class="row">
+         <b>Description:</b>
+      </div>
+      <div class="row">
+         <span id="description"></span>
+      </div>
+      <div class="row">
+         <b>Inclusions:</b>
+      </div>
+      <div class="row">
+         <span id="inclusions"></span>
+      </div>
+      <div class="row">
+         <b>Exclusions:</b>
+      </div>
+      <div class="row">
+         <span id="exclusions"></span>
+      </div>
+   </div>
+</div>
+
+<script type="text/javascript">
+   {
+      let view = new StudyView();
+      view.getStudy();
+   }
+</script>

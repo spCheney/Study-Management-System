@@ -1,0 +1,42 @@
+<h1>New Admin</h1>
+<div class="row">
+  <div class="col-md-4">
+    <b>Username:</b>
+  </div>
+  <div class="col-md-4">
+    <b>Password:</b>
+  </div>
+  <div class="col-md-4">
+     <b>Confirm Password:</b>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+     <input type="text" class="form-control" id="username">
+  </div>
+  <div class="col-md-4">
+     <input type="password" class="form-control" id="password">
+  </div>
+  <div class="col-md-4">
+     <input type="password" class="form-control" id="confirm_password">
+  </div>
+</div>
+
+<br>
+<div class="row" >
+  <div class="col-md-6">
+    <button type="button" class="btn btn-primary" id="new_admin_btn">Add Admin</button>
+    <button type="button" class="btn btn-danger" onclick="header.loadPage('admin_list.html')">Cancel</button>
+  </div>
+</div>
+
+<!-- <script src="../javascript/views/" charset="utf-8"></script> -->
+
+<script type="text/javascript">
+   {
+      let view = new AdminView();
+      $("#new_admin_btn").click(() => {
+         view.addAdmin();
+      });
+   }
+</script>

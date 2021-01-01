@@ -1,0 +1,112 @@
+<h1 id="header">New Study</h1>
+
+<div class="row">
+   <div class="col-md-9">
+      <div class="row">
+         <b>Name:</b>
+      </div>
+      <div class="row">
+         <input type="text" class="form-box" id="name">
+      </div>
+      <div class="row">
+         <b>Summary:</b>
+      </div>
+      <div class="row">
+         <textarea class="form-box" rows="4" id="summary"></textarea>
+      </div>
+      <div class="row">
+         <b>Type of Study:</b>
+      </div>
+      <div class="row" id="study_types_container">
+         <select class="form-box" id="study_types"></select>
+      </div>
+      <a id="add_study_type" href="#">Add Additional Study Type</a>
+      <div class="row">
+         <b>Study Length:</b>&nbsp(in weeks)
+      </div>
+      <div class="row">
+         <input type="number" class="form-box" id="length">
+      </div>
+      <div class="row">
+         <b>Target Age:</b>&nbsp(in years)
+      </div>
+      <div class="row">
+         <input type="number" class="form-box" id="age">
+      </div>
+      <div class="row">
+         <b>Subject Compensation:</b>
+      </div>
+      <div class="row">
+         <textarea class="form-box" rows="4" id="compensation"></textarea>
+      </div>
+      <div class="row">
+         <b>Status:</b>
+      </div>
+      <div class="row">
+         <select class="form-control" id="status">
+            <option value="Enrolling" selected>Enrolling</option>
+            <option value="On Hold">On Hold</option>
+            <option value="Finished">Finished</option>
+         </select>
+      </div>
+      <div class="row">
+         <b>Description:</b>
+      </div>
+      <div class="row">
+         <textarea class="form-box" rows="4" id="description"></textarea>
+      </div>
+      <div class="row">
+         <b>Inclusions:</b>
+      </div>
+      <div class="row">
+         <textarea class="form-box" rows="4" id="inclusions"></textarea>
+      </div>
+      <div class="row">
+         <b>Exclusions:</b>
+      </div>
+      <div class="row">
+         <textarea class="form-box" rows="4" id="exclusions"></textarea>
+      </div>
+      <div class="row">
+         <b>Attach Image:</b>
+      </div>
+      <div class="row">
+         <select class="form-control" id="attach_image">
+            <option value="0" selected>No</option>
+            <option value="1">Yes</option>
+         </select>
+      </div>
+   </div>
+</div>
+<div class="hide" id="upload_btn_container">
+   <div class="row" style="padding-top: 15px;">
+      <div class="col-md-12">
+         <button type="button" class="btn btn-primary" id="upload_btn">Upload Image</button>
+      </div>
+   </div>
+</div>
+<div class="hide" id="image_info_container">
+   <div class="row">
+      <div class="col-md-6" style="padding-left: 0px;">
+         <b>Image:</b>
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-md-6" style="padding-left: 0px;">
+         <input type="text" class="form-box" id="image_file">
+      </div>
+      <button type="button" class="btn btn-primary" id="change_img_btn">Change Image</button>
+   </div>
+</div>
+
+<br>
+<button type="button" class="btn btn-primary" id="save_btn">Save</button>
+<button type="button" class="btn btn-danger" id="delete_btn">Delete</button>
+<button type="button" class="btn btn-danger" id="cancel_btn">Cancel</button>
+
+<script type="text/javascript">
+   {
+      let view = new StudyView();
+      view.editStudy();
+   }
+</script>

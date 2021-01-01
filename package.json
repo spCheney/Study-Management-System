@@ -1,0 +1,61 @@
+{
+  "name": "studyms",
+  "version": "1.0.0",
+  "description": "Study Management System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "Spencer Cheney",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.5.3",
+    "bootstrap": "^4.5.2",
+    "electron-squirrel-startup": "^1.0.0",
+    "fs": "0.0.1-security",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.54",
+    "@electron-forge/maker-deb": "^6.0.0-beta.54",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.54",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
+    "@electron-forge/maker-zip": "^6.0.0-beta.54",
+    "electron": "^10.1.5"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "studyms"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip"
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+       },
+       {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+             "certificateFile": "./cert.pfx",
+             "certificatePassword": "this-is-a-secret"
+          }
+       }
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<h1 id="header">Current Studies</h1>
+<div class="row" id="options">
+   <b>Filter By:</b>
+   <div class="col-md-4">
+      <select class="form-control" id="status">
+         <option value="Enrolling" selected>Enrolling</option>
+         <option value="On Hold">On Hold</option>
+         <option value="Complete">Complete</option>
+      </select>
+   </div>
+</div>
+
+<br>
+<div id="study_list"></div>
+
+<script type="text/javascript">
+   {
+      let view = new StudyView();
+      view.createStudyList();
+   }
+</script>

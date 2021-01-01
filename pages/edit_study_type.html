@@ -1,0 +1,60 @@
+<h1 id="study_type_header">New Study Type</h1>
+
+<div class="row">
+   <div class="col-md-6">
+      <b>Name</b>
+   </div>
+</div>
+<div class="row">
+   <div class="col-md-6">
+      <input type="text" class="form-box" id="name">
+   </div>
+</div>
+<div class="row">
+   <div class="col-md-6">
+      <b>Active</b>
+   </div>
+</div>
+<div class="row">
+   <div class="col-md-6">
+      <select class="form-control" id="active">
+         <option value="0">No</option>
+         <option value="1">Yes</option>
+      </select>
+   </div>
+</div>
+<div class="hide" id="upload_btn_container">
+   <div class="row" style="padding-top: 15px;">
+      <div class="col-md-12">
+         <button type="button" class="btn btn-primary" id="upload_btn">Upload Image</button>
+      </div>
+   </div>
+</div>
+<div class="hide" id="image_info_container">
+   <div class="row">
+      <div class="col-md-6">
+         <b>Image:</b>
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-md-6">
+         <input type="text" class="form-control" id="image_file">
+      </div>
+      <div class="col-md-3">
+         <button type="button" class="btn btn-primary" id="change_img_btn">Change Image</button>
+      </div>
+   </div>
+</div>
+
+<br>
+<button type="button" class="btn btn-primary" id="save_btn">Save</button>
+<button type="button" class="btn btn-danger" id="delete_btn">Delete</button>
+<button type="button" class="btn btn-danger" onclick="header.loadPage('edit_study_types_list.html')">Cancel</button>
+
+
+<script type="text/javascript">
+   {
+      let view = new StudyTypeView();
+      view.getStudyType();
+   }
+</script>

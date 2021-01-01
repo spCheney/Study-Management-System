@@ -1,0 +1,42 @@
+<h1>Sign In</h1>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-4">
+    <b>Username:</b>
+  </div>
+  <div class="col-md-2"></div>
+  <div class="col-md-4">
+    <b>Password:</b>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-4">
+     <input type="text" class="form-box" id="username">
+  </div>
+  <div class="col-md-2"></div>
+  <div class="col-md-4">
+     <input type="password" class="form-box" id="password">
+  </div>
+</div>
+
+<br>
+<div class="row" >
+  <div class="col-md-1"></div>
+  <div class="col-md-6">
+    <button type="button" class="btn btn-primary" id="sign_in_btn">Sign In</button>
+  </div>
+</div>
+
+<!-- <script src="../javascript/views/" charset="utf-8"></script> -->
+
+<script type="text/javascript">
+   {
+      let view = new AdminView();
+      view.checkIfAdminsExist();
+      $("#sign_in_btn").click(() => {
+         view.checkSignIn();
+      });
+      $("#username").focus();
+   }
+</script>

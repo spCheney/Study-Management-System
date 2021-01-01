@@ -1,0 +1,86 @@
+.solid {
+   color: #000000;
+   text-decoration: none;
+}
+
+.solid:hover {
+   color: #404040;
+}
+
+.headerText {
+   color: #636363;
+}
+
+.header {
+   width: 100%;
+   background-color: #bfbfbf;
+   color: #636363;
+   padding: 8px;
+}
+
+.typeImage {
+   width: 100%;
+   height: 200px;
+   border-radius: 3px 3px 0px 0px;
+}
+
+.typeButton {
+   border-radius: 0px 0px 3px 3px;
+   width: 100%;
+}
+
+.hide {
+   display: none;
+}
+
+.studyListContainerImage {
+   border: 1px solid black;
+   border-radius: 0px 3px 3px 0px;
+   width: 50%;
+}
+
+.studyListContainerNoImage {
+   border: 1px solid black;
+   border-radius: 3px;
+   width: 50%;
+   height: 150px;
+}
+
+.studyListImage {
+   width: 150px;
+   height: 150px;
+   border-radius: 3px 0px 0px 3px;
+}
+
+.studyListHeader {
+   font-size: 20px;
+   margin-left: 5px;
+}
+
+.studyListText {
+   margin-left: 5px;
+   max-height: 130px;
+   overflow: scroll;
+}
+
+.studyImage {
+   width: 100%;
+   height: 500px;
+   margin-left: -20px;
+   margin-top: -20px;
+   object-fit: cover;
+   object-position: 0 0;
+}
+
+.studyHeaderImage {
+   position: absolute;
+   top: 450px;
+   color: white;
+}
+
+.form-box {
+   width: 100%;
+   border-radius: 4px;
+   border: 1px solid #ccc;
+   padding: 7px;
+}

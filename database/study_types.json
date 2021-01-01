@@ -1,0 +1,32 @@
+[
+  {
+    "_id": 1,
+    "_name": "Type 1 Diabetes",
+    "_active": true,
+    "_image": "Texas Lubbock.jpg"
+  },
+  {
+    "_id": 2,
+    "_name": "Type 2 Diabetes",
+    "_active": true,
+    "_image": "hush-naidoo-pA0uoltkwao-unsplash.jpg"
+  },
+  {
+    "_id": 3,
+    "_name": "Pediatric",
+    "_active": true,
+    "_image": ""
+  },
+  {
+    "_id": 4,
+    "_name": "Medical Devices",
+    "_active": true,
+    "_image": ""
+  },
+  {
+    "_id": 5,
+    "_name": "Other Diabetes Studies",
+    "_active": true,
+    "_image": ""
+  }
+]
